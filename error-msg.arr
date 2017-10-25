@@ -19,3 +19,13 @@ overlay(circle(30, "outline", "green"), star(50, "solid", "blue")
 
 # arity-mismatch <RuntimeError> This application expression errored. 2 arguments were passed to an operator that expected 3 arguments. An application expression expects the number of parameters and arguments to be the same.
 circle(25, "solid, blue")
+
+# parse-error-next-token <ParseError> Parse failed. Is there a missing colon(`:`), comma(`,`), string marker(`"`), or keyword? Is there something there that shouldn't be?
+overlay(star(20, "solid", "purple")
+  star(60, "solid", "red")
+
+# parse-error-next-token <ParseError> Parse failed. Is there a missing colon(`:`), comma(`,`), string marker(`"`), or keyword? Is there something there that shouldn't be?
+rectangle(40, 50, "solid" "blue")
+
+# unbound-id <CompileError> The identifier is unbound. It is used but not previously defined.
+rectagle(80, 30, "solid", "pink")
