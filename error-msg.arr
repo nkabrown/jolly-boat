@@ -1,5 +1,6 @@
 #lang pyret
 #|
+  the pyret-experimental-cli can be found at /usr/local/lib/node_modules
   parse error and runtime error messages can be found in pyret-lang/src/arr/trove/error.arr
   compliation error messages can be found in pyret-lang/src/arr/compiler/compile-structs.arr
   see Error Messages Are Classifiers paper @ https://cs.brown.edu/~sk/Publications/Papers/
@@ -62,6 +63,12 @@ rectagle(80, 30, "solid", "pink")
   throws an error in the JavaScript runtime.
 |#
 20 / 0
+
+#|
+  num-string-binop-error <RuntimeError> Evaluating the Plus (+) operator the operator expects
+  to be give two Numbers or two Strings.
+|#
+2 + '4'
 
 #|
   parse-error-unterminated-string <ParseError> Pyret thinks your program may have an
