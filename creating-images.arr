@@ -23,7 +23,7 @@ eye = overlay-xy(circle(15, "solid", "blue"),
                  -25, -25,
                  circle(30, "outline", "black"))
 
-# consstructs and image by placeing img1 to the left of img2
+# constructs an image by placing img1 to the left of img2
 beside :: (img1 :: Image, img2 :: Image) -> Image
 beside(eye, eye)
 
